@@ -1,5 +1,7 @@
 """
 splitipy
+========
+Split your file into multiple small pieces and easily transfer them using removable media.
 
 Usage:
   splitipy <file>
@@ -14,8 +16,9 @@ Options:
   --version                         Show version.
 
 Examples:
-  splitipy hello
-  splitipu hello.mp4 --size 2000
+  splitipy video.mp4
+  splitipy hello.mp4 --size=2000
+  splitify --join video.mp4
 
 Help:
   For help using this tool, please open an issue on the Github repository:
