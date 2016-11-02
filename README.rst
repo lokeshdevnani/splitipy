@@ -20,15 +20,19 @@ After you are done with the operation or transfers, to combine the file back. Ga
 and it will generate the file **join-file.ext** in the same folder.
 
 
-Installation sets up splitipy command
-**************************************
+Installation
+************
 
-Situation before installation::
+Make sure you have python and pip installed and then run:
+
+    pip install splitipy
+
+Situation before installation:
 
     $ splitipy
     bash: splitipy: command not found
 
-Now, the ``splitipy`` command is available::
+Now, the ``splitipy`` command is available:
 
     $ splitipy --version
      0.2.0.
