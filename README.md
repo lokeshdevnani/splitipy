@@ -1,5 +1,8 @@
 Splitipy
-========
+=====
+
+[![PyPI](https://img.shields.io/badge/splitipy-stable-brightgreen.svg)](https://pypi.python.org/pypi/splitipy)
+[![PyPI](https://img.shields.io/pypi/v/splitipy.svg)](https://pypi.python.org/pypi/splitipy)
 
 Splitipy is a utility built with python which lets you split your files
 into multiple small pieces which you can send/transfer/isolate easily

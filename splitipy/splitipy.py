@@ -38,6 +38,3 @@ def main():
         Stuff.combine(options['<file>'])
     elif(options['<file>']):
         Stuff.split(options['<file>'], options['--size'])
-
-class Boo(Stuff):
-    pass
