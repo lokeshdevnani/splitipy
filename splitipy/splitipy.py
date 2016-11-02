@@ -29,19 +29,12 @@ import sys
 from docopt import docopt
 from .stuff import Stuff
 
-
 def main():
     options = docopt(__doc__, version=__version__)
-    print(options)
     if (options['-j'] or options['--join']):
-        Stuff.combine(options['<file>'], options)
+        Stuff.combine(options['<file>'])
     elif(options['<file>']):
         Stuff.split(options['<file>'], options['--size'])
-
-    # print("Executing bootstrap version %s." % __version__)
-    # print("List of argument strings: %s" % sys.argv[1:])
-    # print("Stuff and Boo():\n%s\n%s" % (Stuff, Boo()))
-
 
 class Boo(Stuff):
     pass

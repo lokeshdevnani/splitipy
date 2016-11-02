@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """splitipy.stuff: stuff module within the splitipy package."""
+
 from __future__ import division
 from math import ceil
 import os
@@ -40,8 +41,30 @@ class Stuff():
 				i+=1
 		finally:
 			fcombine.close()
+		print "Done !!"
 
 
 	@staticmethod
-	def combine(jfile, options):
-		print( "joining " + jfile)
+	def combine(jfile):
+		if os.path.isfile(jfile+".1"):
+			filesize = os.stat(jfile).st_size
+		else:
+			print "Hey, the file named "+jfile+" doesn't exists."
+			return 1
+
+		bsize=1024 * 1024
+		fcombine  = open("join-"+jfile,"wb")
+		try:
+			i=1
+			while True:
+				if not os.path.isfile(jfile+"."+str(i)):
+					break
+				fr = open(jfile+"."+str(i),"rb")
+				block=1
+				while block!="":
+					block = fr.read(bsize)
+					fcombine.write(block)
+				fr.close()
+				i+=1
+		finally:
+			fcombine.close()
