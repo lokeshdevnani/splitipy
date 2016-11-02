@@ -25,7 +25,7 @@ Help:
   https://github.com/lokeshthegenius/splitipy
 """
 
-__version__ = "0.2.0"
+__version__ = "1.0.0"
 
 
 import sys
