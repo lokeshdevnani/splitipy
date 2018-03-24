@@ -89,6 +89,6 @@ Later, I cleaned up, added a few options and documentation (thanks to docopts) a
 
 Clone, fork, contribute and send a pull request:
 
-<https://github.com/lokeshthegenius/splitipy>
+<https://github.com/lokeshdevnani/splitipy>
 
 Get in touch: <https://lokeshd.com>
