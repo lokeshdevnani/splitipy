@@ -14,7 +14,7 @@ class Stuff():
 		if os.path.isfile(sfile):
 			filesize = os.stat(sfile).st_size
 		else:
-			print "Hey, the file named "+sfile+" doesn't exists."
+			print("Hey, the file named "+sfile+" doesn't exists.")
 			return 1
 
 		splitsize = int(splitsize) * 1024 * 1024 #converting into MBs
@@ -25,7 +25,7 @@ class Stuff():
 		times = int(ceil(splitsize/bsize))
 		parts = int(ceil(filesize/splitsize))
 
-		print "Splitting file "+ str(sfile) + " into "+ str(parts) + " parts";
+		print("Splitting file "+ str(sfile) + " into "+ str(parts) + " parts")
 		try:
 			i=1
 			block=True
@@ -41,7 +41,7 @@ class Stuff():
 				i+=1
 		finally:
 			fcombine.close()
-		print "Done !!"
+		print("Done !!")
 
 
 	@staticmethod
@@ -49,7 +49,7 @@ class Stuff():
 		if os.path.isfile(jfile+".1"):
 			filesize = os.stat(jfile).st_size
 		else:
-			print "Hey, the file named "+jfile+" doesn't exists."
+			print("Hey, the file named "+jfile+" doesn't exists.")
 			return 1
 
 		bsize=1024 * 1024
